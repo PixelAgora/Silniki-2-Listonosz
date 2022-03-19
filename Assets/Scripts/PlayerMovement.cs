@@ -20,19 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
         //Move in the direction we're aming
         MoveTowardTarget(targetVector);
-
-        //Rotate in the direction we're traveling
-        RotateTowardMovementVector();
     }
 
     private void MoveTowardTarget(Vector3 targetVector)
     {
         var speed = moveSpeed * Time.deltaTime;
         transform.Translate(targetVector * speed);
-    }
-
-    private void RotateTowardMovementVector()
-    {
-        //tu coś będzie ale muszę iść spać
     }
 }
