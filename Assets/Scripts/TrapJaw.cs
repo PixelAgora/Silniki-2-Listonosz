@@ -6,7 +6,7 @@ public class TrapJaw : MonoBehaviour
 {
      public void OnTriggerEnter()
     {
-       if (other.GameObject.tag == "Player") 
+       if (tag == "Player") 
         {
            Debug.Log(" no i jest ");
         }
