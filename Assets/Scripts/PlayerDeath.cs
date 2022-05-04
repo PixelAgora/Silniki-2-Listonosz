@@ -9,7 +9,7 @@ private Vector3 startPosition;
 
      private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Obstacle")
+        if (other.gameObject.tag == "Bomb")
         {
            Kill();
         }
