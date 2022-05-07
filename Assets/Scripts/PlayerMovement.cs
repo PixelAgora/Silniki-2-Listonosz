@@ -1,30 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Rigidbody rb;
+    public Vector3 normalized;
+    [SerializeField] float walkSpeed = 3f;
+    [SerializeField] float runSpeed = 6f;
     
-    private InputHandler _input;
-    [SerializeField]
-    private float moveSpeed;
-
-    private void Awake ()
+    // Start is called before the first frame update
+    void Start()
     {
-        _input = GetComponent<InputHandler>();
 
     }
+
+    // Update is called once per frame
     void Update()
     {
-        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
-
-        //Move in the direction we're aming
-        MoveTowardTarget(targetVector);
+        Move();
     }
-
-    private void MoveTowardTarget(Vector3 targetVector)
+        private void Move()
     {
-        var speed = moveSpeed * Time.deltaTime;
-        transform.Translate(targetVector * speed);
+        Vector3 input = new Vector3
+        {
+            x = Input.GetAxis("Horizontal"),
+            y = 0f,
+            z = Input.GetAxis("Vertical")
+        };
+        input.Normalize();
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.position += input * Time.deltaTime * runSpeed;
+        }
+        else
+        {
+            transform.position += input * Time.deltaTime * walkSpeed;
+        }
+        
     }
 }
