@@ -1,8 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerDeath : MonoBehaviour
+public class Death : MonoBehaviour
+
+//player dies when he reaches certain height y= -5
+//player dies when he steps on a trap
+//player dies when enemy gets them
+//after every death there is a death screen UI with restart button
+//Restarts to current scene
+
 
 {
 private Vector3 startPosition;
@@ -18,7 +26,13 @@ private Vector3 startPosition;
     {
         transform.position = startPosition;
     }
+   // public void RestartScene(){
+       // StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 0));}
 }
+
+
+
+
 // mając trapa, żeby trap mówił graczowi, że ma go zabić
 // tag obstacle nie mówi dużo, trza żeby mówił, że zabija
 // relacja ma być tylko pomiędzy trapem a graczem. Event system - trap > wejście > jeden obiekt decyduje co się dzieje
