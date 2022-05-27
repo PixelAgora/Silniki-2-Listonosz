@@ -13,17 +13,18 @@ public class Death : MonoBehaviour
 
 
 {
-private Vector3 startPosition;
+public Vector3 startPosition;
 
-     private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bomb")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bomb")
         {
            Kill();
         }
     }
-    private void Kill()
+    public void Kill()
     {
+        Debug.Log(" no i jest epicko ");
         transform.position = startPosition;
     }
    // public void RestartScene(){
