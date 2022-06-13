@@ -5,10 +5,13 @@ namespace Code.InteractionSystem
 {
     public class Interactor : MonoBehaviour
     {
+        
         private IInteractive currentObject;
         private bool inputPressed;
         private bool inputReleased;
+
         
+
         private const KeyCode INTERACTION_KEY_CODE = KeyCode.E; // Set here your keyboard shortcut for interaction
         
         private void Update()
@@ -21,12 +24,18 @@ namespace Code.InteractionSystem
             HandleInputUpdate();
         }
 
+        
+
         private void OnTriggerEnter(Collider other)
         {
+            
             IInteractive obj = other.GetComponent<IInteractive>();
             if (obj != null)
             {
                 HandleObjectEnter(obj);
+                
+
+                
             }
         }
         
@@ -36,6 +45,8 @@ namespace Code.InteractionSystem
             if (obj != null)
             {
                 HandleObjectExit(obj);
+                
+                
             }
         }
 
