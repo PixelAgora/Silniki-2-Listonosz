@@ -10,7 +10,7 @@ public class DoNotDestroy : MonoBehaviour
  
     void Awake()
     {
-        if (instance != null && SceneManager.GetActiveScene().name == "Starting room")
+        if (instance != null)
             Destroy(gameObject);
         else
         {
