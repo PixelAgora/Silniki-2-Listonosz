@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Loader.unity
+    path: Assets/Scenes/In build/Loader.unity
     guid: 52de6eb221aeef74d8733a002a031051
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/In build/Menu.unity
     guid: d14c76e135e7a1d4d9b6dbb278e00069
   - enabled: 1
-    path: Assets/Scenes/Options.unity
+    path: Assets/Scenes/In build/Options.unity
     guid: be4deb193304c8f40a2ea00668b62c79
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/In build/Credits.unity
     guid: 50c3aa8c77e37844f8b5d699a67b5858
   - enabled: 1
-    path: Assets/Scenes/Starting room.unity
+    path: Assets/Scenes/In build/Starting room.unity
     guid: 6384156f32c532541832a3f99dd929d0
   - enabled: 1
-    path: Assets/Scenes/OutsidePlayerHouse.unity
+    path: Assets/Scenes/In build/OutsidePlayerHouse.unity
     guid: 8851fad62010a5d42820301074320a27
   m_configObjects: {}
