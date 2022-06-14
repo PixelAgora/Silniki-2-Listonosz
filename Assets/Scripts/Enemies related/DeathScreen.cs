@@ -1,38 +1,31 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.UI;
-//using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
+namespace Dieplease
+{
+public class DeathScreen : MonoBehaviour
+{
+    public Button retryButton;
+    public Button exitButton;
+    public Text Deathinfo;
 
-//public class DeathScreen : MonoBehaviour
-//{
-    //[SerializeField] private Button retryButton;
-    //[SerializeField] private Button exitButton;
-
-    //[SerializeField] private string gameSceneName;
+    public void Awake(){
+        gameObject.SetActive(false);
+    }
+    public void Setup(){
+        gameObject.SetActive(true);
+        Deathinfo.text = "Złapano Cię morduniu";
+    }
     
+    public void RestartButton(){
+        SceneManager.LoadScene("Menu");
+    }
 
-    //private void Start ()
-    //{
-       // retryButton.onClick.AddListener(RetryGame);
-       // exitButton.onClick.AddListener(ExitGame);
-    //}
-    //private void RetryGame()
-    //{
-        //LoadCurrentLevel();
-    //}
-
-    //private void ExitGame ()
-    //{
-        //Application.Quit();
-    //}
-
-    //public void LoadCurrentLevel()
-    //{
-       // StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
-    //}
-
-       // IEnumerator LoadLevel(int levelIndex);
+    public void ExitButton() {
+        Application.Quit();
+    }
       
-//}
+}
+}

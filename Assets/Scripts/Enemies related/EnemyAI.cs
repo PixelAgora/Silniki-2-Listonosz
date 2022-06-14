@@ -1,5 +1,11 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using static Dieplease.DeathScreen;
+
+namespace Enemy{
 
 public class EnemyAI : MonoBehaviour{
     public NavMeshAgent agent;
@@ -53,9 +59,10 @@ public class EnemyAI : MonoBehaviour{
         agent.SetDestination(player.position);
     }
     private void KillPlayer(){
+        //Setup();
+        //Destroy(gameObject);
         Debug.Log(" no i jest ");
-        FindObjectOfType<Death>().Kill();
-        //Destroy.agent;
     }
 
+}
 }

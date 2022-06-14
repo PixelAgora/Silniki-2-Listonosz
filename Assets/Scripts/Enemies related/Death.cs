@@ -1,35 +1,29 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Death : MonoBehaviour
+public class Death : MonoBehaviour{
 
-//player dies when he reaches certain height y= -5
-//player dies when he steps on a trap
-//player dies when enemy gets them
-//after every death there is a death screen UI with restart button
-//Restarts to current scene
+    public GameController GameController;
+    public Vector3 startPosition;
 
-
-{
-public Vector3 startPosition;
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bomb")
-        {
-           Kill();
+    public void Die(){
+        if(GameObject.Find("Player").transform.position.y <= 5){
+            GameController.GameOver();
         }
     }
-    public void Kill()
-    {
+
+    public void Kill(){
         Debug.Log(" no i jest epicko ");
-        transform.position = startPosition;
+        GameController.GameOver();
     }
-   // public void RestartScene(){
-       // StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 0));}
+
 }
+
+//player dies when he reaches certain height y= -5
+
+
 
 
 
@@ -43,3 +37,22 @@ public Vector3 startPosition;
 // zależności dwukierunkowe to ZUO
 // poczytać o solid (abstrakcje a nie konkretne realizacje) (Pioprek się czepia)
 // klasa pickup z pierwszego semestru
+/*public Vector3 startPosition;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bomb")
+        {
+           Kill();
+        }
+    }
+    public void Kill()
+    {
+        Debug.Log(" no i jest epicko ");
+        transform.position = startPosition;
+    }
+
+    public void Death(){
+        
+    }
+    */
