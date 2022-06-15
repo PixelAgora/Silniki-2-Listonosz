@@ -1,25 +1,25 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour{
 
-    public GameController GameController;
-    public Vector3 startPosition;
+//     public GameController GameController;
+//     public Vector3 startPosition;
 
-    public void Die(){
-        if(GameObject.Find("Player").transform.position.y <= 5){
-            GameController.GameOver();
-        }
-    }
+//     public void Die(){
+//         if(GameObject.Find("Player").transform.position.y <= 5){
+//             GameController.GameOver();
+//         }
+//     }
 
-    public void Kill(){
-        Debug.Log(" no i jest epicko ");
-        GameController.GameOver();
-    }
+//     public void Kill(){
+//         Debug.Log(" no i jest epicko ");
+//         GameController.GameOver();
+//     }
 
-}
+// }
 
 //player dies when he reaches certain height y= -5
 
@@ -37,22 +37,21 @@ public class Death : MonoBehaviour{
 // zależności dwukierunkowe to ZUO
 // poczytać o solid (abstrakcje a nie konkretne realizacje) (Pioprek się czepia)
 // klasa pickup z pierwszego semestru
-/*public Vector3 startPosition;
+// public Vector3 startPosition;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bomb")
-        {
-           Kill();
-        }
-    }
-    public void Kill()
-    {
-        Debug.Log(" no i jest epicko ");
-        transform.position = startPosition;
-    }
+//     private void OnTriggerEnter(Collider other)
+//     {
+//         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bomb")
+//         {
+//            Kill();
+//         }
+//     }
+//     public void Kill()
+//     {
+//         Debug.Log(" no i jest epicko ");
+//         transform.position = startPosition;
+//     }
 
-    public void Death(){
+//     public void Death(){
         
     }
-    */

@@ -8,9 +8,6 @@ public class MemeButton : MonoBehaviour
 {
     [SerializeField] private Button memeButton;
     
-
-    
-
     private void Start ()
     {
         memeButton.onClick.AddListener(PlayMeme);

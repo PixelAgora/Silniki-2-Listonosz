@@ -11,14 +11,13 @@ GameObject:
   - component: {fileID: 1167342917597907534}
   - component: {fileID: 1167342917597907638}
   - component: {fileID: 1167342917597907639}
-  - component: {fileID: 1167342917597907528}
   - component: {fileID: 1167342917597907529}
   - component: {fileID: 1167342917597907530}
   - component: {fileID: 1167342917597907637}
   - component: {fileID: 1167342917597907532}
   - component: {fileID: 1167342917597907533}
   - component: {fileID: 2368234943749441987}
-  - component: {fileID: -3731054426193246394}
+  - component: {fileID: 3766033313113274194}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -92,19 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1167342917597907528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167342917597907535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 592fd0c6ac2ec4a4c8c70bd627af1cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: 0, z: 0}
 --- !u!136 &1167342917597907529
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -189,7 +175,7 @@ MonoBehaviour:
   jump: {x: 0, y: 0, z: 0}
   jumpForce: 2
   isGrounded: 0
---- !u!114 &-3731054426193246394
+--- !u!114 &3766033313113274194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,7 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167342917597907535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34d0a9a5f87e047dd85ee2b107f287e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 592fd0c6ac2ec4a4c8c70bd627af1cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1167342918036532780

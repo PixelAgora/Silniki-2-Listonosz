@@ -18,9 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/In build/Credits.unity
     guid: 50c3aa8c77e37844f8b5d699a67b5858
   - enabled: 1
+    path: Assets/Scenes/In build/MemeVideo.unity
+    guid: ceab8846aa533c4478978e57a1f62d8e
+  - enabled: 1
     path: Assets/Scenes/In build/Starting room.unity
     guid: 6384156f32c532541832a3f99dd929d0
   - enabled: 1
     path: Assets/Scenes/In build/OutsidePlayerHouse.unity
     guid: 8851fad62010a5d42820301074320a27
+  - enabled: 1
+    path: Assets/Scenes/In build/FlammaHouseExterior.unity
+    guid: 028cefb59619fa24db2a09f668512b18
+  - enabled: 1
+    path: Assets/Scenes/In build/SwampBetweenVAndM.unity
+    guid: 68c3ced9c8ef7b94e98bef73602dc408
+  - enabled: 1
+    path: Assets/Scenes/In build/MakuchHouseExterior.unity
+    guid: 1276cefbd8c0a6541b4b18420644ba3d
   m_configObjects: {}
