@@ -17,7 +17,12 @@ GameObject:
   - component: {fileID: 1167342917597907532}
   - component: {fileID: 1167342917597907533}
   - component: {fileID: 2368234943749441987}
+<<<<<<< Updated upstream
   - component: {fileID: 3766033313113274194}
+=======
+  - component: {fileID: -3731054426193246394}
+  - component: {fileID: 6059877633528017935}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -185,6 +190,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 592fd0c6ac2ec4a4c8c70bd627af1cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6059877633528017935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167342917597907535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c4ba653a38e644bade5960ce5c760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1167342918036532780
