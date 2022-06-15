@@ -3,7 +3,6 @@ using UnityEngine.AI;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using static Dieplease.DeathScreen;
 
 namespace Enemy{
 

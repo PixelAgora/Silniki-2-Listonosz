@@ -22,7 +22,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+       /* if(Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == lines[index])
             {
@@ -34,10 +34,22 @@ public class Dialogue : MonoBehaviour
                 textComponent.text = lines[index];
             }
             
-        }
+        }*/
     }
-
-    void StartDialogue()
+     
+     public void abibikabibi(){
+        if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+            
+     }
+    public void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
@@ -52,7 +64,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void NextLine()
+    public void NextLine()
     {
         if (index < lines.Length - 1)
         {
