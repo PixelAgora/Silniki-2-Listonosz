@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+namespace Code.ExampleInteractive
+{
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
@@ -63,4 +65,5 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+}
 }
