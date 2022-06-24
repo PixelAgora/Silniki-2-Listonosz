@@ -1,22 +1,21 @@
-using System.Collections;
+/*using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
-namespace Dieplease
-{
 public class DeathScreen : MonoBehaviour
 {
     public Button retryButton;
     public Button exitButton;
-    public Text Deathinfo;
+    public TextMeshProUGUI Deathinfo;
 
     public void Awake(){
         gameObject.SetActive(false);
     }
     public void Setup(){
         gameObject.SetActive(true);
-        Deathinfo.text = "Złapano Cię morduniu";
+        Debug.Log = "Złapano Cię morduniu";
     }
     
     public void RestartButton(){
@@ -28,4 +27,4 @@ public class DeathScreen : MonoBehaviour
     }
       
 }
-}
+*/
