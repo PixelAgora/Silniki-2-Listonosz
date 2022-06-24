@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/In build/Loader.unity
     guid: 52de6eb221aeef74d8733a002a031051
   - enabled: 1
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/In build/MemeVideo.unity
     guid: ceab8846aa533c4478978e57a1f62d8e
+  - enabled: 1
+    path: Assets/Scenes/In build/Cutscene.unity
+    guid: 714a5a48233084f42868d354b8d23e0d
   - enabled: 1
     path: Assets/Scenes/In build/Starting room.unity
     guid: 6384156f32c532541832a3f99dd929d0
