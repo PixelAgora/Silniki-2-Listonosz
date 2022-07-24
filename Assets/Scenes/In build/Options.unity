@@ -625,7 +625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: cb483dc12bc68a84bbd14aa7ba00f4e7, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6617818fb92fcfb48b6dc9ed420fe362, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -700,7 +700,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    Had to check, huh?'
+    Nothing here as of yet.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

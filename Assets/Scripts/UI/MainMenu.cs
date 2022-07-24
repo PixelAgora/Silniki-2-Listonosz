@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     }
     private void StartGame()
     {
-        SceneManager.LoadScene("Cutscene",LoadSceneMode.Single);
+        SceneManager.LoadScene("Starting room",LoadSceneMode.Single);
     }
 
     private void ExitGame ()
