@@ -17,12 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/In build/Credits.unity
     guid: 50c3aa8c77e37844f8b5d699a67b5858
-  - enabled: 1
-    path: Assets/Scenes/In build/MemeVideo.unity
-    guid: ceab8846aa533c4478978e57a1f62d8e
-  - enabled: 1
-    path: Assets/Scenes/In build/Cutscene.unity
-    guid: 714a5a48233084f42868d354b8d23e0d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/In build/Starting room.unity
     guid: 6384156f32c532541832a3f99dd929d0
@@ -38,4 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/In build/JoeHouseExterior.unity
     guid: 1276cefbd8c0a6541b4b18420644ba3d
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ae94d9b33253cf646a0dd04db8076d0a,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 036ac6261b8fc0f4b9c78c0f73d7e469,
+      type: 2}
