@@ -2,43 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
-    public Vector3 normalized;
-    [SerializeField] float walkSpeed = 3f;
-    [SerializeField] float runSpeed = 6f;
+    private CharacterController characterController;
+    [SerializeField] float walkSpeed = 5f;
+    [SerializeField] InputActionReference moveActionRef;
     
-    // Start is called before the first frame update
-    void Start()
+    
+    private void Awake()
     {
-
+        characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        Move();
+        var input = moveActionRef.action.ReadValue<Vector2>();
+        characterController.Move(new Vector3(input.x * walkSpeed, 0f, input.y * walkSpeed) * Time.deltaTime);
     }
-        private void Move()
-    {
-        Vector3 input = new Vector3
-        {
-            x = Input.GetAxis("Horizontal"),
-            y = 0f,
-            z = Input.GetAxis("Vertical")
-        };
-        input.Normalize();
-
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            transform.position += input * Time.deltaTime * runSpeed;
-        }
-        else
-        {
-            transform.position += input * Time.deltaTime * walkSpeed;
-        }
-        
-    }
+       
 }
